@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 
 function getTimeLeft() {
-  const target = new Date(new Date().getFullYear(), 4, 29)
+  const target = new Date(new Date().getFullYear(), 4, 29, 17, 0, 0)
   if (target < new Date()) target.setFullYear(target.getFullYear() + 1)
   const diff = target - new Date()
   return {
